@@ -8,10 +8,12 @@
 h1{
     text-align: center;
     letter-spacing: .5rem;
+    text-transform: uppercase;
 }
 h2{
     color: #006EB6;
     text-align: center;
+    text-transform: uppercase;
 }
 p{
     text-align: left;
@@ -19,6 +21,7 @@ p{
     margin-right: auto;
 }
 .logo{
+    display: block;
     width: 150px;  
     margin-left: auto;
     margin-right: auto;
