@@ -5,6 +5,10 @@
     padding: 18px;
     line-height: 1.5;
 }
+.dark{
+    background-color: #333;
+    color: white;
+}
 h1{
     text-align: center;
     letter-spacing: .5rem;
@@ -14,6 +18,9 @@ h2{
     color: #006EB6;
     text-align: center;
     text-transform: uppercase;
+}
+.dark h2{
+    color: #FFFFFF;
 }
 p{
     text-align: left;
