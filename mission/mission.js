@@ -1,4 +1,4 @@
-const themeSelector = document.getElementById("theme");
+const themeSelector = document.getElementById('themeSelector');
 function changeTheme()
 {
     const selectedTheme = themeSelector.value;
