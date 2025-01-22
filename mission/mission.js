@@ -1,6 +1,6 @@
 const themeSelector = document.getElementById('themeSelector');
 const body = document.body;
-const logo = document.getElementsByClassName('logo');
+const logo = document.getElementsByClassName('logo')[0];
 function changeTheme()
 {
     const selectedTheme = themeSelector.value;
@@ -12,7 +12,7 @@ function changeTheme()
     } else {
         // Apply light theme
         body.classList.remove('dark');
-        logo.src = 'byui-logo_blue.wedp';
+        logo.src = 'byui-logo_blue.webp';
     }
 }
 themeSelector.addEventListener('change', changeTheme);
