@@ -1,6 +1,6 @@
 const themeSelector = document.getElementById('themeSelector');
 const body = document.body;
-const logo = document.getElementById('logo');
+const logo = document.getElementsByClassName('logo');
 function changeTheme()
 {
     const selectedTheme = themeSelector.value;
