@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: "Mooli";
+}
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem;
+}
+img {
+	max-width: 100%;
+    height: 250px;
+    width: 250px;
+    border: white 5px solid;
+    object-fit: cover;
+}
+nav {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem;
+}
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    background-color: lightgray;
+}
+a:link,
+a:visited {
+    color: var(--text-light);
+}
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem;
+}
+@media screen and (min-width: 480px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+    .Menu{
+        display: none;
+        justify-content: space-around;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .gallery {
+      grid-template-columns: 1fr 1fr 1fr;
+      display: grid;
+    }
+    .Menu {
+      font-size: 20px;
+      background-color: lightgray;
+    }
+  }
