@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+:root{
+    --gold-color: #EFC69B;
+    --red-color: #AF1B3F;
+    --dark-dark: #473144;
+    --primary-font: "Lora", Impact, serif;
+    --secondary-font: Helvetica, Arial, sans-serif;
+}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Lora', Impact, serif;
+}
+
+h1{
+    color: var(--dark-dark);
+}
+
+h2{
+    color: var(--red-color);
+}
+
+div{
+    color: var(--dark-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--red-color);
+}
+
+a:hover {
+    color: var(--dark-dark);
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-nav {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: end;
+    padding: 0;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: medium;
+    border-color: var(--gold-color);
+}
+
+.main-nav li {
+    padding: 10px;
+    font-size: 18px;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.skiptocontent a {
+    position: absolute; /* Set absolute positioning */
+    left: -999px; /* Move it off-screen */
+    top: 10px; /* Position it near the top */
+    background: #000; /* High contrast background */
+    color: #fff; /* High contrast text */
+    padding: 10px; /* Add padding for better visibility */
+    text-decoration: none; /* Remove underline */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+.skiptocontent a:focus {
+    left: 10px; /* Move it back on-screen when focused */
+    top: 10px; /* Keep it near the top */
+    outline: 2px solid yellow; /* Add focus indicator */
+}
