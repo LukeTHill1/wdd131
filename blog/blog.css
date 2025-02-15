@@ -66,6 +66,27 @@ article {
     padding: 15px;
     border-radius: 5px;
 }
+
+.bookReview{
+    text-align: center;
+}
+
+.book-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bookInfo{
+    text-align: right;
+    border-right: var(--gold-color) solid;
+}
+
+.filerForm{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .skiptocontent a {
     position: absolute; /* Set absolute positioning */
     left: -999px; /* Move it off-screen */

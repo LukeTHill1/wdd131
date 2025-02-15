@@ -25,3 +25,17 @@ const pointsTotal = gpaPoints.reduce(function (total, item) {
 }, 0);
 const gpa = pointsTotal / gpaPoints.length;
 console.log("gpa: " + gpa); // set the innerHTML
+
+// example 4
+const words = ["watermelon", "peach", "apple", "tomato", "grape"];
+const shortWords = words.filter(function (word) {
+  return word.length < 6;
+});
+console.log(shortWords); // set the innerHTML
+
+// example 5
+// improved luckyNumber
+const myArray = [12, 34, 21, 54];
+const luckyNumber = 21;
+let luckyIndex = myArray.indexOf(luckyNumber);
+console.log(luckyIndex); // set the innerHTML
