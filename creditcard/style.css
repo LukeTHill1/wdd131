@@ -33,6 +33,19 @@ body {
     z-index: 1;
 }
 
+.card-back label {
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.card-back input {
+    width: 25%;
+    border-radius: 5px;
+    align: right;
+}
+
 .total {
     font-weight: bold;
 }
@@ -51,8 +64,8 @@ input {
     border-radius: 5px;
 }
 
-#exp {
-    width: 45%;
+.exp {
+    width: 25%;
     display: inline-block;
     margin-right: 5px;
 }
