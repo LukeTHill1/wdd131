@@ -46,7 +46,7 @@ h2 {
     flex-direction: column;
     border: 1px solid var(--text-dark);
     .recipe-image{
-        height: 50%;
+        height: 25%;
     }
 }
 .social {
@@ -56,3 +56,18 @@ h2 {
         height: 32px;
     }
 }
+@media (min-width: 600px) {
+    .recipe {
+        flex-direction: row;
+        .recipe-image {
+            width: 25%;
+        }
+    }
+}
+@media (min-width: 960px)  {
+    .recipe {
+        .recipe-image {
+            width: 15%;
+        }
+    }
+} 
