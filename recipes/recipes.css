@@ -41,12 +41,18 @@ h2 {
         border-radius: 5px;
     }
 }
+.tag {
+    border: 0.5px solid var(--text-dark);
+}
 .recipe {
     display: flex;
     flex-direction: column;
     border: 1px solid var(--text-dark);
     .recipe-image{
         height: 25%;
+    }
+    .description {
+        display: none;
     }
 }
 .social {
@@ -62,12 +68,20 @@ h2 {
         .recipe-image {
             width: 25%;
         }
+        .description {
+            display: block;
+            width: 75%;
+        }
     }
 }
 @media (min-width: 960px)  {
     .recipe {
         .recipe-image {
             width: 15%;
+        }
+        .description {
+            display: block;
+            width: 85%;
         }
     }
 } 
