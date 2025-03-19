@@ -95,7 +95,7 @@ header{
     align-items: center;
     grid-template-columns: 200px 1fr;
 }
-.logo{
+#logo{
     width: 100%
 }
 .third-pic{
