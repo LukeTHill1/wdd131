@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD131 | Personal Home Page</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="java/intro.js" defer></script>
 </head>
 <body>
     <div id="content">
@@ -123,24 +124,5 @@
             </div>
         </footer>
     </div>
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-        for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            /* Toggle between adding and removing the "active" class,
-            to highlight the button that controls the panel */
-            this.classList.toggle("active");
-
-            /* Toggle between hiding and showing the active panel */
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-            panel.style.display = "none";
-            } else {
-            panel.style.display = "block";
-            }
-        });
-        }
-    </script>
 </body>
 </html>

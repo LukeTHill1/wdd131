@@ -15,3 +15,9 @@ var acc = document.getElementsByClassName("accordion");
             }
         });
         }
+
+const character = [
+    {
+        name: "Alear"
+    }
+]
