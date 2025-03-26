@@ -18,7 +18,7 @@ var acc = document.getElementsByClassName("accordion");
     }
 
 
-const character = [
+const characters = [
     {
         name: "Alear",
         imgSrc: "images/lythos/Alear_Profile.jpg",
@@ -370,6 +370,7 @@ function renderCharacter(character){
                 <p>
                     ${character.background}    
                 </p>
+                <p>Homeland: ${character.home}</p>
                 <hr>
                 <h3>Personality</h3>
                 <p>
@@ -395,6 +396,7 @@ function renderCharacter(character){
                 <p>
                     ${character.howtomakegood}    
                 </p>
-            </div>`
+            </div>`; 
 }
-characterContent.innerHTML = character.map(renderCharacter).join("");
+characterContent.innerHTML = characters.forEach(renderCharacter).join("");
+
