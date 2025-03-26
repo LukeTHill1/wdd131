@@ -1,22 +1,15 @@
-var acc = document.getElementsByClassName("accordion");
-    var i;
-    for (i = 0; i < acc.length; i++) {
+function initalizeAccordion(className) {
+    var acc = document.getElementsByClassName(className);
+    for (var i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function() {
-            /* Toggle between adding and removing the "active" class,
-            to highlight the button that controls the panel */
             this.classList.toggle("active");
 
-            /* Toggle between hiding and showing the active panel */
             var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } 
-            else {
-                panel.style.display = "block";
-            }
+            panel.style.display = (panel.style.display === "block") ? "none" : "block";
         });
     }
-
+}
+initalizeAccordion("accordion");
 
 const characters = [
     {
@@ -360,9 +353,12 @@ const characters = [
 ]
 
 const characterContent = document.querySelector('#character_content');
+const searchForm = document.getElementById("searchForm");
+const searchInput = document.getElementById("searchInput");
+
 
 function renderCharacter(character){
-    return `button class="accordion">${character.name}</button>
+    return `<button class="accordion">${character.name}</button>
             <div class="panel">
                 img class="character" src="${character.imgSrc}" alt="${character.imgAlt}">
                 <h2>Who is ${character.name}?</h2>
@@ -398,5 +394,44 @@ function renderCharacter(character){
                 </p>
             </div>`; 
 }
-characterContent.innerHTML = characters.forEach(renderCharacter).join("");
+characterContent.innerHTML = characters.map(renderCharacter).join("");
+initalizeAccordion("accordion");
 
+// // Function to display characters
+// function displayResults(filteredCharacters) {
+//     characterContent.innerHTML = filteredCharacters.length
+//         ? filteredCharacters.map(renderCharacter).join("")
+//         : "<p>No characters found.</p>";
+
+//     initalizeAccordionAccordions("accordion"); // Reinitialize accordion functionality
+// }
+
+// // Search functionality (Only by Name)
+// searchForm.addEventListener("submit", function (event) {
+//     event.preventDefault(); // Stop the page from reloading
+
+//     const query = searchInput.value.toLowerCase(); // Get search input
+//     localStorage.setItem("lastSearch", query); // Save input to localStorage
+
+//     // Search only by name
+//     const filteredCharacters = characters.filter(char =>
+//         char.name.toLowerCase().includes(query)
+//     );
+
+//     displayResults(filteredCharacters);
+// });
+
+// // Load last search from localStorage on page load
+// window.addEventListener("load", function () {
+//     const savedSearch = localStorage.getItem("lastSearch");
+
+//     if (savedSearch) {
+//         searchInput.value = savedSearch; // Restore input
+//         const filteredCharacters = characters.filter(char =>
+//             char.name.toLowerCase().includes(savedSearch)
+//         );
+//         displayResults(filteredCharacters);
+//     } else {
+//         displayResults(characters); // Default to all characters
+//     }
+// });

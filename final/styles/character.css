@@ -93,6 +93,13 @@ header{
 .character{
     width: 10%;
 }
+#character_content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 .search_row{
     display: flex;
     img{
