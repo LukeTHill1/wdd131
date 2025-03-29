@@ -118,6 +118,13 @@ header{
         border-radius: 5px;
     }
 }
+#emblem_content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 footer{
     color: #0A9396;
     padding: 25px 50px;
