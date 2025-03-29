@@ -104,6 +104,20 @@ header{
 .emblem{
     width: 10%;
 }
+.search_row{
+    display: flex;
+    img{
+        height: 16px;
+        width: 16px;
+    }
+    input{
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1.5em;
+        border: 1px solid;
+        border-radius: 5px;
+    }
+}
 footer{
     color: #0A9396;
     padding: 25px 50px;
