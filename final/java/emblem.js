@@ -15,7 +15,7 @@ initalizeAccordion("accordion");
 
 const emblemsContent = document.querySelector("#emblem_content");
 function renderEmblems(emblem) {
-    return `<button class="accordion">${emblem.name}</button>
+    return `<button class="emblem_accordion">${emblem.name}</button>
             <div class="panel">
                 <h3>${emblem.line}</h3>
                 <img class="emblem" src="${emblem.imageSrc}" alt="${emblem.imageAlt}">
@@ -30,4 +30,4 @@ function renderEmblems(emblem) {
             </div>`;
 }
 emblemsContent.innerHTML = emblems.map(renderEmblems).join("");
-initalizeAccordion("accordion");
+initalizeAccordion("emblem_accordion");

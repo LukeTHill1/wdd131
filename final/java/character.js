@@ -358,7 +358,7 @@ const searchInput = document.getElementById("searchInput");
 
 
 function renderCharacter(character){
-    return `<button class="accordion">${character.name}</button>
+    return `<button class="character_accordion">${character.name}</button>
             <div class="panel">
                 img class="character" src="${character.imgSrc}" alt="${character.imgAlt}">
                 <h2>Who is ${character.name}?</h2>
@@ -395,4 +395,4 @@ function renderCharacter(character){
             </div>`; 
 }
 characterContent.innerHTML = characters.map(renderCharacter).join("");
-initalizeAccordion("accordion");
+initalizeAccordion("character_accordion");
