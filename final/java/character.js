@@ -353,9 +353,6 @@ const characters = [
 ]
 
 const characterContent = document.querySelector('#character_content');
-const searchForm = document.getElementById("searchForm");
-const searchInput = document.getElementById("searchInput");
-
 
 function renderCharacter(character){
     return `<button class="character_accordion">${character.name}</button>
@@ -396,3 +393,18 @@ function renderCharacter(character){
 }
 characterContent.innerHTML = characters.map(renderCharacter).join("");
 initalizeAccordion("character_accordion");
+
+function search_character() {
+    let input = document.getElementById("searchInput").value
+    input = input.toLowerCase();
+    let x = document.getElementsByClassName("character_accordion");
+    
+    for (i = 0; i < x.length; i++) {
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display = "none";
+        }
+        else {
+            x[i].style.display = characterContent;
+        }
+    }
+}

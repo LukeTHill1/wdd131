@@ -13,9 +13,24 @@
     transition: 0.4s;
     font-size: 25px;
 }
+.emblem_accordion {
+    background-color:#94d2bd ;
+    color:#005f73 ;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 25px;
+}
   
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
+    background-color: #0A9396;
+}
+.active .emblem_accordion {
     background-color: #0A9396;
 }
   
